@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reversal Cipher</title>
+    <link rel="icon" href="../img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <style>
+        body {
+            background: url('https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-161365.jpg?size=626&ext=jpg&uid=R48122316&ga=GA1.1.604906629.1698997722&semt=ais') center/cover no-repeat;
+            color: #2c3e50; /* Dark text color for better readability */
+            font-family: 'Arial', sans-serif; /* Change font family */
+            margin: 0; /* Remove default margin */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .container-fluid {
+            margin-top: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .btn-outline-warning {
+            color: #2c3e50; /* Dark text color */
+            border-color: #ffc107; /* Yellow border */
+        }
+
+        .gradient {
+            background: linear-gradient(to right, #4e54c8, #8f94fb); /* Gradient background */
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        textarea {
+            width: 70%;
+            height: 200px;
+            margin: 0 auto; /* Center the textarea */
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .btn-huge {
+            font-size: 24px;
+            padding: 15px 30px;
+        }
+
+        .btn-large {
+            font-size: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <script src="../js/reversal.js"></script>
+    <script src="../js/output.js"></script>
+
+    <div class="container-fluid text-center">
+        <button onclick="document.location.href='../index.html'" class="btn btn-outline-warning">Back</button>
+        <h1 class="gradient">Algoritma Reserve Cipher</h1>
+        <h5 class="gradient">Kriptografi CDY</h5>
+    </div>
+
+    <div class="container-fluid text-center">
+        <div>
+            <textarea id="ui" placeholder="Enter text here"></textarea>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center">
+        <div>
+            <button onclick="output(reversal, 'encode')" class="btn btn-outline-warning btn-lg btn-huge btn-small mx-auto gradient">Enkripsi</button>
+            <button onclick="output(reversal, 'encode')" class="btn btn-outline-warning btn-block btn-lg btn-huge btn-large gradient">Enkripsi</button>
+        </div>
+    </div>
+</body>
+</html>

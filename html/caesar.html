@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Caesar Cipher</title>
+   <link rel="icon" href="../img/favicon.png" type="image/png">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/main.css">
+   <link rel="stylesheet" href="../css/media.css">
+   <style>
+      body {
+         background-image: url('https://img.freepik.com/free-vector/abstract-pixel-rain-background_23-2148384633.jpg?size=626&ext=jpg&uid=R48122316&ga=GA1.1.604906629.1698997722&semt=ais');
+         background-size: cover;
+         color: #333333; /* Warna teks menjadi abu-abu tua */
+         font-family: 'Poppins', sans-serif; /* Gaya huruf yang lebih menarik */
+      }
+
+      header {
+         padding: 10px;
+         text-align: center;
+      }
+
+      main {
+         margin: 20px 10%; /* Penyesuaian pada margin kiri dan kanan */
+         padding: 20px;
+         background-color: #b2def08f; /* Latar belakang warna putih */
+         border-radius: 10px;
+      }
+
+      label {
+         font-weight: bold;
+      }
+
+      textarea {
+         width: 100%;
+         height: 100px;
+         margin-bottom: 15px;
+         padding: 10px;
+      }
+
+      input {
+         width: 80px;
+         padding: 8px;
+         margin-bottom: 15px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+      }
+
+      table {
+         margin: 0 auto;
+      }
+
+      button {
+         font-weight: bold;
+         letter-spacing: 1px;
+         background-color: #05f856; /* Warna latar belakang tombol */
+         border-color: #04f966; /* Warna border tombol */
+         color: #010101; /* Warna teks tombol */
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <button onclick="document.location.href='../index.html'" class='btn btn-outline-warning'>Back</button>
+      <h1 class='text-center'>
+         <span class='gradient'>Algoritma Caesar Cipher</span>
+      </h1>
+      <h5 class='text-center'>
+         <span class='gradient'>Kriptografi CDY</span>
+      </h5>
+   </header>
+
+
+      <div class='container'>
+         <div>
+            <textarea id="ui" placeholder="Enter text here"></textarea>
+        </div>
+      </div>
+
+      <div class='container'>
+         <div class='text-center'>
+            <table>
+               <tr>
+                  <td colspan="2">
+                     <label for="key">Key:</label>
+                     <input id='key' type='number' min="1" max="100" placeholder='Int'/>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <button onclick="output(caesar, 'encode')" class='btn btn-outline-warning btn-lg btn-huge'>
+                        <span class='gradient'>Enkripsi</span>
+                     </button>
+                  </td>
+                  <td>
+                     <button onclick="output(caesar, 'decode')" class='btn btn-outline-warning btn-lg btn-huge'>
+                        <span class='gradient'>Dekripsi</span>
+                     </button>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   
+
+   <script src="../js/caesar.js"></script>
+   <script src="../js/output.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project UAS</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/free-vector/matrix-style-binary-code-digital-falling-numbers-blue-background_1017-37387.jpg?size=626&ext=jpg&uid=R48122316&ga=GA1.1.604906629.1698997722&semt=ais');
+            background-size: cover;
+            color: #333333; /* Warna teks menjadi abu-abu tua */
+            font-family: 'Poppins', sans-serif; /* Gaya huruf yang lebih menarik */
+        }
+
+        .gradient {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .btn-outline-warning {
+            border-color: #ff7e5f;
+            color: #ff7e5f;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .btn-outline-warning:hover {
+            background-color: #ff7e5f;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <img src="img/pp.jpeg" alt="Cryptography Image" class="img-fluid rounded-circle" style="width: 120px; height: 120px;">
+            <h1 class="display-4 mt-3">
+                <span class="gradient">Kriptografi CDY</span>
+            </h1>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-md-6 mb-4">
+                <button onclick="document.location.href='html/caesar.html'" class="btn btn-outline-warning btn-block btn-lg">
+                    <span class="gradient"><strong>Algoritma Caesar Cipher</strong></span>
+                </button>
+            </div>
+            <div class="col-md-6 mb-4">
+                <button onclick="document.location.href='html/hexadecimal.html'" class="btn btn-outline-warning btn-block btn-lg">
+                    <span class="gradient"><strong>Algoritma Hexadecimal Cipher</strong></span>
+                </button>
+            </div>
+            <div class="col-md-6 mb-4">
+                <button onclick="document.location.href='html/reversal.html'" class="btn btn-outline-warning btn-block btn-lg">
+                    <span class="gradient"><strong>Algoritma Reverse Cipher</strong></span>
+                </button>
+            </div>
+            <div class="col-md-6 mb-4">
+                <button onclick="document.location.href='html/vigenere.html'" class="btn btn-outline-warning btn-block btn-lg">
+                    <span class="gradient"><strong>Algoritma Vigenere Cipher</strong></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center mt-5">
+            <p class="lead">
+                <span class="gradient"><strong>Project Kriptografi Kelompok 5</strong></span>
+            </p>
+            <p class="lead">
+                <span class="gradient"><strong>Carina Dian Yuda</strong></span>
+            </p>
+        </div>
+    </div>
+
+    <script src="js/quotes.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let elem = document.getElementById('quote');
+            let quote = quotes[random(0, quotes.length - 1)];
+            setQuote(elem, quote);
+
+            function random(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) + min);
+            }
+
+            function setQuote(elem, quote) {
+                elem.innerHTML = quote;
+            }
+        });
+    </script>
+
+    <script>
+        function inProgress(name) {
+            let btn = document.getElementById(name);
+            let str1 = "in development";
+            let str2 = "u grind my gears";
+
+            if (btn.innerHTML == str1)
+                btn.innerHTML = str2;
+            else
+                btn.innerHTML = str1;
+        }
+    </script>
+</body>
+</html>

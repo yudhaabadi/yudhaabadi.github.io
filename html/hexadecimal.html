@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hex Encoding</title>
+   <link rel="icon" href="../img/favicon.png" type="image/png">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/main.css">
+   <link rel="stylesheet" href="../css/media.css">
+   <style>
+      body {
+         background-image: url('https://img.freepik.com/free-vector/stream-binary-code-design-vector_53876-170625.jpg?size=626&ext=jpg&uid=R48122316&ga=GA1.1.604906629.1698997722&semt=ais');
+         background-size: cover;
+         color: #333333; /* Warna teks menjadi abu-abu tua */
+         font-family: 'Poppins', sans-serif; /* Gaya huruf yang lebih menarik */
+      }
+
+      header {
+         padding: 10px;
+         text-align: center;
+      }
+
+      main {
+         margin: 20px auto;
+         padding: 20px;
+         background-color: #b2def08f; /* Latar belakang warna putih */
+         border-radius: 10px;
+      }
+
+      label {
+         font-weight: bold;
+      }
+
+      textarea {
+            width: 70%;
+            height: 200px;
+            margin: 0 auto; /* Center the textarea */
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 16px;
+      }
+
+      button {
+         font-weight: bold;
+         letter-spacing: 1px;
+         background-color: #05f856; /* Warna latar belakang tombol */
+         border-color: #04f966; /* Warna border tombol */
+         color: #010101; /* Warna teks tombol */
+      }
+   </style>
+</head>
+<body>
+   <script src="../js/hex.js"></script>
+   <script src="../js/output.js"></script>
+
+   <header>
+      <button onclick="document.location.href='../index.html'" class='btn btn-outline-warning'>Back</button>
+      <h1 class='text-center'>
+         <span class='gradient'>Algoritma Hexadecimal Cipher</span>
+      </h1>
+      <h5 class='text-center'>
+         <span class='gradient'>Kriptografi CDY</span>
+      </h5>
+   </header>
+
+   
+      <div class='container'>
+         <div class="container-fluid text-center">
+            <div>
+                <textarea id="ui" placeholder="Enter text here"></textarea>
+            </div>
+        </div>
+      </div>
+      <br>
+
+      <div class='container'>
+         <div class="text-center">
+            <table class="mx-auto" width=100%>
+               <tr>
+                  <td>
+                     <button onclick="output(hex, 'encode')" style="float: right;" class='btn btn-outline-warning btn-lg btn-huge btn-small'>
+                        <span class='gradient'>Enkripsi</span>
+                     </button>
+                     <button onclick="output(hex, 'encode')" class='btn btn-outline-warning btn-block btn-lg btn-huge btn-large'>
+                        <span class='gradient'>Enkripsi</span>
+                     </button>
+                  </td>
+                  <td>
+                     <button onclick="output(hex, 'decode')" class='btn btn-outline-warning btn-lg btn-huge btn-small'>
+                        <span class='gradient'>Dekripsi</span>
+                     </button>
+                     <button onclick="output(hex, 'decode')" class='btn btn-outline-warning btn-block btn-lg btn-huge btn-large'>
+                        <span class='gradient'>Dekripsi</span>
+                     </button>
+                  </td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   
+
+</body>
+</html>
